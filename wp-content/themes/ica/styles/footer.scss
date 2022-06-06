@@ -1,0 +1,104 @@
+@import '_variables.scss';
+
+.ica {
+
+    &-footer {
+        margin-top: 4rem;
+
+        &-bar {
+            background-color: var(--ica-event-primary-color);
+            width: 100%;
+            margin: 0;
+            text-align: center;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                background-color: var(--ica-event-primary-color);
+            }
+
+            a {
+                color: $white;
+                width: 100%;
+                padding: .5rem;
+                display: block;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    color: $white;
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        &-wrapper {
+            background-color: lighten($black, 10%);
+        }
+
+        &-content {
+            @include wrapper;
+            padding: 1rem;
+
+            &--left, &--center, &--right {
+                padding: 2rem;
+
+                @media (max-width: $tablet) {
+                    max-width: 100%;
+                    flex: 0 0 100%;
+                }
+            }
+
+            img {
+                max-width: 150px;
+                width: 100%;
+                padding: 1rem;
+                padding-left: 0;
+            }
+
+            h4 {
+                color: darken($white, 30%);
+                border-bottom: 2px solid var(--ica-event-primary-color);
+                padding: 0 .5rem .25rem 0;
+                display: inline-block;
+            }
+
+            ul {
+                list-style: none;
+                padding-left: 0;
+            }
+
+            .fab {
+                padding-left: .5rem;
+            }
+
+            a {
+                display: block;
+                color: $white;
+                padding: .25rem 0;
+
+                &:hover {
+                    color: var(--ica-event-primary-color);
+                }
+            }
+
+            p {
+                color: darken($white, 30%);
+            }
+        }
+
+        &-copyright {
+            background: $black;
+
+            .container {
+                text-align: left;
+            }
+
+            p {
+                color: darken($white, 60%);
+                font-size: .8rem;
+                padding: .5rem;
+                display: inline-block;
+            }
+        }
+    }
+}

@@ -1,0 +1,91 @@
+@import '_variables.scss';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-size: $base_size;
+    overflow-x: hidden;
+}
+
+.ica {
+
+    &-wrapper {
+        @include wrapper;
+
+        &--narrow {
+            @include wrapper--narrow;
+        }
+
+        &-title {
+            display: inline-block;
+            position: relative;
+            margin-bottom: 3rem;
+            color: var(--ica-event-secondary-color);
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -1rem;
+                width: 90px;
+                height: 2px;
+                background-color: var(--ica-event-primary-color);
+                display: inline-block;
+            }
+        }
+    }
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+img.alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+
+}
+
+img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+
+}
+
+img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alignright {
+    float: right;
+}
+
+.alignleft {
+    float: left;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding: .5rem 0;
+}

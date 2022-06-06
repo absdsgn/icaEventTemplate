@@ -1,0 +1,2 @@
+[09-Jun-2019 12:22:31 UTC] PHP Notice:  Constant DB_PASSWORD already defined in phar:///opt/wp-cli/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1153) : eval()'d code on line 30
+[09-Jun-2019 12:24:17 UTC] PHP Notice:  Constant DB_PASSWORD already defined in phar:///opt/wp-cli/bin/wp/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1153) : eval()'d code on line 30

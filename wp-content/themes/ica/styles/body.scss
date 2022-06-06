@@ -1,0 +1,14 @@
+@import '_variables.scss';
+
+.ica_container {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    // padding-top: 148px;
+    padding-top: 115px;
+
+    @media (max-width: $tablet) {
+        padding-top: 100px;
+    }
+
+}

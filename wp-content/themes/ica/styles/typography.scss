@@ -1,0 +1,49 @@
+@import '_variables.scss';
+
+h1 {
+    font-family: var(--ica-event-heading-font-family);
+    font-size: $h1_size;
+    font-weight: var(--ica-event-heading-font-weight);
+}
+
+h2 {
+    font-family: var(--ica-event-heading-font-family);
+    font-size: $h2_size;
+    font-weight: var(--ica-event-heading-font-weight);
+}
+
+h3 {
+    font-family: var(--ica-event-heading-font-family);
+    font-size: $h3_size;
+    font-weight: var(--ica-event-heading-font-weight);
+}
+
+h4 {
+    font-family: var(--ica-event-body-font-family);
+    font-size: $h4_size;
+    font-weight: var(--ica-event-heading-font-weight);
+}
+
+h5 {
+    font-family: var(--ica-event-body-font-family);
+    font-size: $h5_size;
+    font-weight: var(--ica-event-heading-font-weight);
+}
+
+p {
+    font-family: var(--ica-event-body-font-family);
+    font-size: $base_size;
+    margin-bottom: 0;
+}
+
+a {
+    color: var(--ica-event-primary-color);
+    font-family: var(--ica-event-body-font-family);
+    font-size: $base_size;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        text-decoration: none;
+        color: var(--ica-event-primary-color);
+    }
+}

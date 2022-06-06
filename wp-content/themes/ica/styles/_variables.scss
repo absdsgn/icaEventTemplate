@@ -1,0 +1,41 @@
+// Colors
+$primary:#f89923;
+$secondary: #2C3E50;
+$tertiary: #f89923;
+$accent: #f89923;
+$highlight: #2C3E50;
+$shadow: #f4eee7;
+$black: #212121;
+$white: #ffffff;
+
+// Breakpoints
+$mobile: 440px;
+$tablet: 768px;
+$desktop: 1200px;
+
+//Wrapper
+$wrapper: 1200px;
+$wrapper_narrow: 900px;
+ 
+// Typography
+// $open-sans: 'Open Sans', sans-serif;
+$header-font: 'Ibarra Real Nova', serif;
+$body-font: 'Muli', sans-serif;
+$base_size: 16px;
+$h1_size: 3.25rem;
+$h2_size: 2.5rem;
+$h3_size: 2rem;
+$h4_size: 1.25rem;
+$h5_size: 1rem;
+
+@mixin wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $wrapper;
+}
+
+@mixin wrapper--narrow {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $wrapper_narrow;
+}
