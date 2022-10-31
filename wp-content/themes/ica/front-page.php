@@ -205,6 +205,7 @@
                         <?php
                         $levelHasSponsors = false;
                         $sponsorId = str_replace(' ', '-', $sponsorshipLevel['title']);
+                        $sponsorId = htmlspecialchars($sponsorId);
                         ?>
 
                         <h4 id="sponsor-<?php echo $sponsorId; ?>"><span style="display: inline-block; padding-right: .5rem; color: <?php echo $sponsorshipLevel['color'];?>;"><?php echo $sponsorshipLevel['icon'];?></span><?php echo $sponsorshipLevel['title']; ?></h4>
